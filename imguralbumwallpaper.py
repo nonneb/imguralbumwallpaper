@@ -30,10 +30,6 @@ class ImgurPicGetter:
             self.image_urls.append(image_url)
             #print(self.image_urls)
 
-    #testingstuff
-    def showme(self):
-        print(self.imageIDs)
-        print(self.image_urls)
 
     def setbackground(self):
         key = randint(0, len(self.image_urls)-1)
