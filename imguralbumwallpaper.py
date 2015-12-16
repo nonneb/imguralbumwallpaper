@@ -1,9 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # encoding: utf-8
 # some code taken from
 # https://github.com/alexgisby/imgur-album-downloader/blob/master/imguralbum.py
 
-from pymsgbox import *
 import time
 import sys
 import re
@@ -43,6 +42,4 @@ else:
 	inputtedurl = prompt(text='Enter an imgur album URL', title='Imgur Album Wallpapers')
 
 picgetter = ImgurPicGetter(inputtedurl)
-while True:
-	picgetter.setbackground()
-	time.sleep(30)
+picgetter.setbackground()
